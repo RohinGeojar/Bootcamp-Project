@@ -1,0 +1,7 @@
+-------------------------------------
+Weather Status for DELHI
+-------------------------------------
+Current Temperature        : 37.05 Degree Celsius
+Current Weather Description:haze
+Current Wind Speed         :1.54KMph
+Current Humidity           :32%
