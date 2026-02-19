@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 450'>
+<rect width='600' height='450' fill='#ecfeff'/>
+<path d='M110 280h390c22 0 40 18 40 40H110z' fill='#0891b2'/>
+<path d='M130 280l120-70 80 50 120 20v40H110z' fill='#06b6d4'/>
+<circle cx='270' cy='290' r='6' fill='white'/><circle cx='295' cy='290' r='6' fill='white'/>
+<circle cx='320' cy='290' r='6' fill='white'/><circle cx='345' cy='290' r='6' fill='white'/>
+<text x='300' y='390' text-anchor='middle' font-size='34' fill='#0e7490' font-family='Arial'>Shoes</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 450'>
+<rect width='600' height='450' fill='#eef2ff'/>
+<circle cx='300' cy='220' r='120' fill='#c7d2fe'/>
+<path d='M190 230a110 110 0 0 1 220 0' stroke='#4338ca' stroke-width='24' fill='none'/>
+<rect x='165' y='220' width='40' height='90' rx='16' fill='#1e1b4b'/>
+<rect x='395' y='220' width='40' height='90' rx='16' fill='#1e1b4b'/>
+<text x='300' y='390' text-anchor='middle' font-size='34' fill='#312e81' font-family='Arial'>Headphones</text>
+</svg>
