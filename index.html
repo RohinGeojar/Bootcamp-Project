@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaCart - Demo E-Commerce</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>NovaCart</h1>
+      <p>Your one-stop demo shop</p>
+    </div>
+    <div class="header-actions">
+      <label class="search-box" for="searchInput">
+        <span>🔎</span>
+        <input id="searchInput" type="text" placeholder="Search products..." />
+      </label>
+      <button id="themeToggle" class="ghost-btn" aria-label="Toggle theme">🌙</button>
+      <button id="cartToggle" class="cart-btn">Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls">
+      <h2>Shop Products</h2>
+      <div class="filters">
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+        </select>
+        <select id="sortFilter">
+          <option value="featured">Sort: Featured</option>
+          <option value="priceAsc">Price: Low to High</option>
+          <option value="priceDesc">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="productGrid" class="product-grid" aria-live="polite"></section>
+
+    <section class="checkout-panel">
+      <h2>Checkout</h2>
+      <form id="checkoutForm" novalidate>
+        <div class="grid-two">
+          <label>
+            Full Name
+            <input name="name" required placeholder="Alex Johnson" />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" required placeholder="alex@email.com" />
+          </label>
+        </div>
+
+        <label>
+          Address
+          <input name="address" required placeholder="123 Main St, City" />
+        </label>
+
+        <div class="grid-two">
+          <label>
+            Payment Method
+            <select name="payment" required>
+              <option value="">Select one</option>
+              <option value="card">Credit / Debit Card</option>
+              <option value="upi">UPI</option>
+              <option value="cod">Cash on Delivery</option>
+            </select>
+          </label>
+          <label>
+            Promo Code
+            <input id="promoCode" name="promo" placeholder="SAVE10" />
+          </label>
+        </div>
+
+        <div class="totals">
+          <p>Subtotal: <span id="subtotal">$0.00</span></p>
+          <p>Discount: <span id="discount">$0.00</span></p>
+          <p>Shipping: <span id="shipping">$0.00</span></p>
+          <p class="grand-total">Total: <span id="grandTotal">$0.00</span></p>
+        </div>
+
+        <button id="placeOrderBtn" class="primary-btn" type="submit">Place Order</button>
+        <p id="checkoutMessage" class="status-msg" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" class="ghost-btn">✕</button>
+    </div>
+    <ul id="cartItems" class="cart-items"></ul>
+    <button id="clearCart" class="ghost-btn danger">Clear Cart</button>
+  </aside>
+
+  <template id="productCardTemplate">
+    <article class="product-card">
+      <img class="product-image" alt="" loading="lazy" />
+      <div class="product-body">
+        <h3 class="product-title"></h3>
+        <p class="product-category"></p>
+        <p class="product-rating"></p>
+        <p class="product-price"></p>
+        <button class="primary-btn add-to-cart">Add to Cart</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>

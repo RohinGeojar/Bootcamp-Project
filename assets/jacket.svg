@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 450'>
+<rect width='600' height='450' fill='#eff6ff'/>
+<path d='M180 340V170l80-65 40 42 40-42 80 65v170z' fill='#2563eb'/>
+<rect x='286' y='140' width='28' height='200' fill='#bfdbfe'/>
+<circle cx='300' cy='190' r='6' fill='#1e3a8a'/><circle cx='300' cy='230' r='6' fill='#1e3a8a'/>
+<circle cx='300' cy='270' r='6' fill='#1e3a8a'/>
+<text x='300' y='400' text-anchor='middle' font-size='34' fill='#1d4ed8' font-family='Arial'>Denim Jacket</text>
+</svg>
